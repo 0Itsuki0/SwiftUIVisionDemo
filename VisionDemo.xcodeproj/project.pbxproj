@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980099E72C535933006BD62F /* LiveDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980099E62C53592E006BD62F /* LiveDetection.swift */; };
+		980099EC2C535B62006BD62F /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980099EB2C535B62006BD62F /* CameraManager.swift */; };
+		980099F02C54A476006BD62F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 980099EF2C54A470006BD62F /* .gitignore */; };
+		980099F22C54A481006BD62F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 980099F12C54A47C006BD62F /* README.md */; };
+		980099F42C54A4B5006BD62F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980099F32C54A4B3006BD62F /* ContentView.swift */; };
+		980099F62C54B28C006BD62F /* DetectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980099F52C54B286006BD62F /* DetectionModel.swift */; };
 		9863F0862C532CAD0034EE50 /* VisionKitDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863F0852C532CAD0034EE50 /* VisionKitDemoApp.swift */; };
-		9863F0882C532CAD0034EE50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863F0872C532CAD0034EE50 /* ContentView.swift */; };
+		9863F0882C532CAD0034EE50 /* StillDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863F0872C532CAD0034EE50 /* StillDetection.swift */; };
 		9863F08A2C532CAF0034EE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9863F0892C532CAF0034EE50 /* Assets.xcassets */; };
 		9863F08D2C532CAF0034EE50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9863F08C2C532CAF0034EE50 /* Preview Assets.xcassets */; };
+		9863F0942C532E680034EE50 /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863F0932C532E680034EE50 /* VisionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9863F0822C532CAD0034EE50 /* VisionKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		980099E62C53592E006BD62F /* LiveDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetection.swift; sourceTree = "<group>"; };
+		980099EB2C535B62006BD62F /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		980099EF2C54A470006BD62F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		980099F12C54A47C006BD62F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		980099F32C54A4B3006BD62F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		980099F52C54B286006BD62F /* DetectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionModel.swift; sourceTree = "<group>"; };
+		980099FC2C54DC1A006BD62F /* liveDetection.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = liveDetection.gif; sourceTree = "<group>"; };
+		980099FD2C54DC49006BD62F /* stillDetectionText.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stillDetectionText.gif; sourceTree = "<group>"; };
+		980099FE2C54DC4E006BD62F /* stillDetectionBarcode */ = {isa = PBXFileReference; lastKnownFileType = file; path = stillDetectionBarcode; sourceTree = "<group>"; };
+		9863F0822C532CAD0034EE50 /* VisionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9863F0852C532CAD0034EE50 /* VisionKitDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionKitDemoApp.swift; sourceTree = "<group>"; };
-		9863F0872C532CAD0034EE50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9863F0872C532CAD0034EE50 /* StillDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillDetection.swift; sourceTree = "<group>"; };
 		9863F0892C532CAF0034EE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9863F08C2C532CAF0034EE50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9863F0932C532E680034EE50 /* VisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +49,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980099EA2C535B55006BD62F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9863F0932C532E680034EE50 /* VisionManager.swift */,
+				980099EB2C535B62006BD62F /* CameraManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		980099F72C54CA5B006BD62F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				980099F52C54B286006BD62F /* DetectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		980099FA2C54CA71006BD62F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980099E62C53592E006BD62F /* LiveDetection.swift */,
+				9863F0872C532CAD0034EE50 /* StillDetection.swift */,
+				980099F32C54A4B3006BD62F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		980099FB2C54DC09006BD62F /* ReadmeAssets */ = {
+			isa = PBXGroup;
+			children = (
+				980099FE2C54DC4E006BD62F /* stillDetectionBarcode */,
+				980099FD2C54DC49006BD62F /* stillDetectionText.gif */,
+				980099FC2C54DC1A006BD62F /* liveDetection.gif */,
+			);
+			path = ReadmeAssets;
+			sourceTree = "<group>";
+		};
 		9863F0792C532CAD0034EE50 = {
 			isa = PBXGroup;
 			children = (
-				9863F0842C532CAD0034EE50 /* VisionKitDemo */,
+				980099FB2C54DC09006BD62F /* ReadmeAssets */,
+				980099F12C54A47C006BD62F /* README.md */,
+				980099EF2C54A470006BD62F /* .gitignore */,
+				9863F0842C532CAD0034EE50 /* VisionDemo */,
 				9863F0832C532CAD0034EE50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +100,22 @@
 		9863F0832C532CAD0034EE50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9863F0822C532CAD0034EE50 /* VisionKitDemo.app */,
+				9863F0822C532CAD0034EE50 /* VisionDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9863F0842C532CAD0034EE50 /* VisionKitDemo */ = {
+		9863F0842C532CAD0034EE50 /* VisionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				980099FA2C54CA71006BD62F /* View */,
+				980099F72C54CA5B006BD62F /* Model */,
+				980099EA2C535B55006BD62F /* Manager */,
 				9863F0852C532CAD0034EE50 /* VisionKitDemoApp.swift */,
-				9863F0872C532CAD0034EE50 /* ContentView.swift */,
 				9863F0892C532CAF0034EE50 /* Assets.xcassets */,
 				9863F08B2C532CAF0034EE50 /* Preview Content */,
 			);
-			path = VisionKitDemo;
+			path = VisionDemo;
 			sourceTree = "<group>";
 		};
 		9863F08B2C532CAF0034EE50 /* Preview Content */ = {
@@ -70,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9863F0812C532CAD0034EE50 /* VisionKitDemo */ = {
+		9863F0812C532CAD0034EE50 /* VisionDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9863F0902C532CAF0034EE50 /* Build configuration list for PBXNativeTarget "VisionKitDemo" */;
+			buildConfigurationList = 9863F0902C532CAF0034EE50 /* Build configuration list for PBXNativeTarget "VisionDemo" */;
 			buildPhases = (
 				9863F07E2C532CAD0034EE50 /* Sources */,
 				9863F07F2C532CAD0034EE50 /* Frameworks */,
@@ -82,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = VisionKitDemo;
+			name = VisionDemo;
 			productName = VisionKitDemo;
-			productReference = 9863F0822C532CAD0034EE50 /* VisionKitDemo.app */;
+			productReference = 9863F0822C532CAD0034EE50 /* VisionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9863F07D2C532CAD0034EE50 /* Build configuration list for PBXProject "VisionKitDemo" */;
+			buildConfigurationList = 9863F07D2C532CAD0034EE50 /* Build configuration list for PBXProject "VisionDemo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9863F0812C532CAD0034EE50 /* VisionKitDemo */,
+				9863F0812C532CAD0034EE50 /* VisionDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9863F08D2C532CAF0034EE50 /* Preview Assets.xcassets in Resources */,
+				980099F02C54A476006BD62F /* .gitignore in Resources */,
+				980099F22C54A481006BD62F /* README.md in Resources */,
 				9863F08A2C532CAF0034EE50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9863F0882C532CAD0034EE50 /* ContentView.swift in Sources */,
+				9863F0942C532E680034EE50 /* VisionManager.swift in Sources */,
+				980099E72C535933006BD62F /* LiveDetection.swift in Sources */,
+				980099F42C54A4B5006BD62F /* ContentView.swift in Sources */,
+				9863F0882C532CAD0034EE50 /* StillDetection.swift in Sources */,
+				980099F62C54B28C006BD62F /* DetectionModel.swift in Sources */,
 				9863F0862C532CAD0034EE50 /* VisionKitDemoApp.swift in Sources */,
+				980099EC2C535B62006BD62F /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,20 +337,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"VisionKitDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VisionDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Needed!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.VisionKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.VisionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,20 +370,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"VisionKitDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VisionDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Needed!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.VisionKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.VisionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9863F07D2C532CAD0034EE50 /* Build configuration list for PBXProject "VisionKitDemo" */ = {
+		9863F07D2C532CAD0034EE50 /* Build configuration list for PBXProject "VisionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9863F08E2C532CAF0034EE50 /* Debug */,
@@ -332,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9863F0902C532CAF0034EE50 /* Build configuration list for PBXNativeTarget "VisionKitDemo" */ = {
+		9863F0902C532CAF0034EE50 /* Build configuration list for PBXNativeTarget "VisionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9863F0912C532CAF0034EE50 /* Debug */,
