@@ -91,8 +91,7 @@ class VisionManager {
     }
 
     
-    // MARK: Process Results and Observations
-    @MainActor
+    // MARK: Process Results
     private func handleVisionResults(results: some AsyncSequence<VisionResult, Never>) async  {
         var newObservations: [any VisionObservation] = []
         
@@ -112,7 +111,7 @@ class VisionManager {
     }
 
     
-    @MainActor
+    // MARK: Process Observations
     func processObservation(_ observation: any VisionObservation, for imageSize: CGSize) -> (text: String, confidence: Float, size: CGSize, position: CGPoint) {
         switch observation {
         case is RecognizedTextObservation:
