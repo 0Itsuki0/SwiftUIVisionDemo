@@ -18,7 +18,7 @@ and classes implements the protocals above.<br>
 Examples on Text detection, Barcode detection, and a combination of both.
 
 ![Text Detection](./ReadmeAssets/stillDetectionText.gif)
-![BarCode Detection](./ReadmeAssets/stillDetectionBarcode.jpeg)
+![BarCode Detection](./ReadmeAssets/stillDetectionBarcode.png)
 
 For further details, check out [SwiftUI+Vision: Object Detection in Still Image](https://medium.com/@itsuki.enjoy/swiftui-vision-object-detection-in-still-image-61654fa6e6cd).
 
