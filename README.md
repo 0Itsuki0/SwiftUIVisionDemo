@@ -6,7 +6,11 @@ An App demoing on how to use [Vision](https://developer.apple.com/documentation/
 - [VisionResult](https://developer.apple.com/documentation/vision/visionresult)
 - [VisionObservation](https://developer.apple.com/documentation/vision/visionobservation)
 
-and classes implements the protocals above.
+and classes implements the protocals above.<br>
+
+## Prerequisite
+- [Xcode 16 beta](https://developer.apple.com/download)
+- iOS 18 running on real device.
 
 
 
@@ -25,3 +29,13 @@ An example on Live Text detection and recognition.
 ![BarCode Detection](./ReadmeAssets/liveDetection.gif)
 
 For further details, check out [SwiftUI+Vision: Object Detection in Live Capture](https://medium.com/@itsuki.enjoy/swiftui-vision-object-detection-in-live-capture-ca9f0da3c862).
+
+
+## Object Tracking with Custom Algorithm
+**Tracking using custom [Centroid Tracker](./VisionDemo/Manager/CentroidTracker.swift)**
+
+Example on Text detection, recognition and tracking.
+
+![Object Tracking](./ReadmeAssets/objectTracking.gif)
+
+For further details, check out [SwiftUI+Vision: Custom Object Tracking using Centroid Tracking Algorithm](https://medium.com/@itsuki.enjoy/swiftui-vision-object-tracker-using-centroid-tracking-algorithm-02faf0132f92).

@@ -31,6 +31,16 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     .background(RoundedRectangle(cornerRadius: 16).fill(.black))
             }
+            
+            NavigationLink {
+                ObjectTracking()
+            } label: {
+                Text("Object Tracking")
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(.black))
+            }
 
         }
         .foregroundStyle(.white)

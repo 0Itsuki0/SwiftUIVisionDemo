@@ -75,6 +75,7 @@ struct LiveDetection: View {
             await detectionModel.camera.start()
         }
         .onDisappear {
+            detectionModel.isDetecting = false
             detectionModel.camera.stop()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
